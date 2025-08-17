@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>TikTok Roblox Bot</title>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline';">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>TikTok Roblox Bot</h1>
+
+    <section class="card">
+      <h2>Koneksi TikTok</h2>
+      <div class="row">
+        <label>Username TikTok @</label>
+        <input id="username" placeholder="contoh: username_kamu" />
+        <button id="btn-connect">Start</button>
+        <button id="btn-disconnect" class="secondary">Stop</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Mapping Gift → Tombol</h2>
+      <p>Contoh: "Rose" → <code>a</code>, "Whale Diving" → <code>space</code>, "Topi"</p>
+
+      <table id="map-table">
+        <thead>
+          <tr>
+            <th>Nama Gift (keyword)</th>
+            <th>Tombol</th>
+            <th>Hold (ms)</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="map-body">
+        </tbody>
+      </table>
+
+      <div class="row">
+        <input id="giftName" placeholder='Nama gift, mis: "Rose"' />
+        <input id="giftKey" placeholder='Key, mis: "a" atau "space"' />
+        <input id="giftHold" type="number" placeholder="Hold ms (default 100)" />
+        <button id="btn-add">Tambah Mapping</button>
+      </div>
+
+      <div class="row">
+        <button id="btn-save">Simpan Mapping ke Bot</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Log</h2>
+      <div id="log" class="log"></div>
+    </section>
+  </div>
+
+  <script src="./renderer.js"></script>
+</body>
+</html>
