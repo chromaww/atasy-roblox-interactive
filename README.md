@@ -23,7 +23,7 @@ Built with **Electron + Node.js** and uses [TikTok-Live-Connector](https://githu
 
 1. Clone this repo or download the release zip  
    ```sh
-   git clone https://github.com/yourname/atasy-roblox-interactive.git
+   git clone https://github.com/chromaww/atasy-roblox-interactive.git
    cd atasy-roblox-interactive
    ```
 
